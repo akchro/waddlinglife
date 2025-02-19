@@ -10,6 +10,18 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        dark: '#090909',
+        tea: '#C7E3A1',
+        nyan: '#E3F1D0',
+        sage: '#A9AA87',
+        drab: '#6E633D',
+      },
+      fontFamily: {
+        caveat: ['Caveat', 'cursive'],
+        playpen: ['Playpen Sans', 'sans-serif'],
+      },
+      animation: {
+        fadeIn: 'fadeIn 1s ease-in-out',
       },
     },
   },
