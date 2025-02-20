@@ -7,7 +7,7 @@ import {useEffect, useState, useRef} from "react";
 import getPastelColor from "@/lib/getPastelColor";
 import Masonry from "react-masonry-css";
 import {fetchRecentMessages, handleSubmit} from "@/lib/server";
-import {useAutoAnimate} from "@formkit/auto-animate/react";
+import Link from 'next/link'
 import Loading from "@/components/loading";
 
 
@@ -21,7 +21,6 @@ const Landing = () => {
     const [newMessages, setNewMessages] = useState([]);
     const [lastDoc, setLastDoc] = useState(null);
     const [loading, setLoading] = useState(false);
-    const [animateParent, enableAnimation] = useAutoAnimate({duration: 1000})
     const observerRef = useRef(null); // Ref for infinite scrolling
 
     useEffect(() => {
@@ -82,7 +81,7 @@ const Landing = () => {
             <div className={'m-8'}>
                 <h1 className={'text-center  font-bold text-3xl font-playpen '}>Why do you think you&#39;re
                     alive?</h1>
-                <h2 className={'text-center font-playpen text-lg mt-3'}>Inspired by Alice in Borderland</h2>
+                <h2 className={'text-center font-playpen text-lg mt-3'}>Inspired by <Link href={'/alice'} className={'text-[#0000EE] underline visited:text-[#551A8B]'}>Alice in Borderland</Link></h2>
             </div>
             <div className="flex flex-col items-center gap-5 z-10 absolute left-0 right-0">
                 <Mycard message={message} setMessage={setMessage} submitted={submitted} background={userColor}/>
