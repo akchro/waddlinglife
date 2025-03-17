@@ -108,7 +108,7 @@ const Landing = () => {
                         1300: 4,
                         1100: 3,
                         700: 2,
-                        400: 1,
+                        389: 1,
                     }}
                     className="flex"
                     columnClassName="flex flex-col items-center gap-5"

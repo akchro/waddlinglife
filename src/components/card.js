@@ -10,7 +10,7 @@ const Card = ({ message, background }) => {
 
     return (
         <div
-            className={`rounded-2xl min-h-32 md:w-64 w-48 border text-2xl md:text-3xl px-5 py-3 font-caveat border-2 border-drab break-inside-avoid transition-all duration-1000 ${
+            className={`rounded-2xl min-h-32 md:w-64 w-44 border text-xl md:text-3xl px-5 py-3 font-caveat border-2 border-drab break-inside-avoid transition-all duration-1000 ${
                 isVisible
                     ? 'opacity-100 translate-y-0'
                     : 'opacity-0 translate-y-10'
